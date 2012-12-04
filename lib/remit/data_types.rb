@@ -123,11 +123,9 @@ module Remit
   end
     
   class Transaction < BaseResponse
-    
     parameter :caller_name
     parameter :caller_reference
     parameter :caller_description
-    parameter :caller_transaction_date, :type => :time
     parameter :date_completed, :type => :time
     parameter :date_received, :type => :time
     parameter :error_code
